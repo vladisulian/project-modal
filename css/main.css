@@ -1256,7 +1256,7 @@ address {
   border-radius: 30px;
   background-color: #ffe550;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .modal {
     width: 458px;
   }
@@ -1315,7 +1315,7 @@ address {
   color: #2c2c2c;
   border-color: #7eb101;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px) {
   .modal-label__input {
     min-width: 394px;
     height: 48px;
