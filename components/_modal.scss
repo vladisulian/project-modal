@@ -96,7 +96,7 @@
   padding-left: 12px;
 
   border-radius: 30px;
-  border: none;
+  border-color: #7eb101;
   outline: none;
   border: 1px solid transparent;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -117,15 +117,12 @@
     border-color: #7eb101;
   }
 
-  &:valid {
-    border-color: #4caf50;
-  }
-
   &:invalid {
     border-color: red;
+  }
+  &:invalid + .modal-label__errorText {
     opacity: 1;
   }
-  border-color: #7eb101;
 
   @media (min-width: 768px) {
     min-width: 394px;

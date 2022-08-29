@@ -154,12 +154,13 @@
             <div class="modal">
               <p class="modal__title">Order form</p>
               <form class="modal__form">
+                <!-- ? name -->
                 <label class="modal-label">
                   <span class="modal-label__text">Name</span>
                   <input
                     type="text"
                     class="modal-label__input"
-                    required
+                    name="name"
                     placeholder="Your name"
                     minlength="3"
                     maxlength="25"
@@ -169,12 +170,12 @@
                     The name must be between 3 and 25 characters
                   </span>
                 </label>
+                <!-- ? phone -->
                 <label class="modal-label">
                   <span class="modal-label__text">Phone number</span>
                   <input
-                    type="text"
+                    type="tel"
                     class="modal-label__input"
-                    required
                     placeholder="+38(0__)___ __ __"
                   />
                   <!-- ! error text -->
@@ -182,18 +183,16 @@
                     The name must be between 3 and 25 characters
                   </span>
                 </label>
+                <!-- ? email -->
                 <label class="modal-label">
                   <span class="modal-label__text">E-mail</span>
                   <input
-                    type="text"
+                    type="email"
                     class="modal-label__input"
-                    required
                     placeholder="example@gmail.com"
                   />
                   <!-- ! error text -->
-                  <span class="modal-label__errorText">
-                    The name must be between 3 and 25 characters
-                  </span>
+                  <span class="modal-label__errorText"> Please enter a valid email address </span>
                 </label>
                 <button type="submit" class="modal__submit">Send</button>
               </form>

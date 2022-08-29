@@ -1320,7 +1320,7 @@ address {
   margin-left: 20px;
   padding-left: 12px;
   border-radius: 30px;
-  border: none;
+  border-color: #7eb101;
   outline: none;
   border: 1px solid transparent;
   -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -1333,7 +1333,6 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  border-color: #7eb101;
 }
 .modal-label__input:hover {
   border-color: #7eb101;
@@ -1342,11 +1341,10 @@ address {
   color: #2c2c2c;
   border-color: #7eb101;
 }
-.modal-label__input:valid {
-  border-color: #4caf50;
-}
 .modal-label__input:invalid {
   border-color: red;
+}
+.modal-label__input:invalid + .modal-label__errorText {
   opacity: 1;
 }
 @media (min-width: 768px) {
