@@ -1,0 +1,268 @@
+.current_btn {
+  color: $btn-text-col;
+  background-color: $btn-bg-col;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.current {
+  color: $accent-col;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .filter-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    /* !!flex-basis didn't work!! */
+    /* flex-basis: calc((100% - 40px) / 3); */
+  }
+  .filter-img__link {
+    display: block;
+  }
+  .filter-img__overlaySquare {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translatey(150%);
+
+    background-color: $overlay-bg-col;
+  }
+  .overlay__text {
+    padding-left: 15px;
+    padding-top: 45px;
+
+    font-size: 18px;
+    line-height: calc(28 / 18);
+
+    color: $btn-text-col;
+  }
+  .filter-img__link {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  .filter-img__descContainer {
+    padding: 20px 24px;
+
+    border: 1px solid #eeeeee;
+    border-top: none;
+  }
+  .filter-img__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+
+    letter-spacing: 0.06em;
+
+    color: $main-text-col;
+  }
+  .filter-img__subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-col;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 30px;
+    /* !!flex-basis didn't work!! */
+    /* flex-basis: calc((100% - 40px) / 3); */
+  }
+  .filter-img__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  .filter-img__overlaySquare {
+    position: relative;
+    overflow: hidden;
+  }
+  .filter-img__pic {
+    width: 354px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translatey(150%);
+
+    background-color: $overlay-bg-col;
+  }
+  .overlay__text {
+    padding-left: 15px;
+    padding-top: 45px;
+
+    font-size: 18px;
+    line-height: calc(28 / 18);
+
+    color: $btn-text-col;
+  }
+
+  .filter-img__descContainer {
+    padding: 20px 24px;
+
+    border: 1px solid #eeeeee;
+    border-top: none;
+
+    &:first-child {
+    flex-grow: 1;
+
+    }
+  }
+  .filter-img__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    color: $main-text-col;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 4px;
+  }
+  .filter-img__subtitle {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    color: $secondary-text-col;
+  }
+
+  .size-limiter {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    /* !!flex-basis didn't work!! */
+    /* flex-basis: calc((100% - 40px) / 3); */
+  }
+  .filter-img__link {
+    display: block;
+  }
+  .filter-img__overlaySquare {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    transform: translatey(150%);
+
+    background-color: $overlay-bg-col;
+  }
+  .overlay__text {
+    padding-left: 15px;
+    padding-top: 45px;
+
+    font-size: 18px;
+    line-height: calc(28 / 18);
+
+    color: $btn-text-col;
+  }
+  .filter-img__link {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  .filter-img__descContainer {
+    padding: 20px 24px;
+
+    border: 1px solid #eeeeee;
+    border-top: none;
+  }
+  .filter-img__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    color: $main-text-col;
+    letter-spacing: 0.06em;
+
+    margin-bottom: 4px;
+  }
+  .filter-img__subtitle {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    color: $secondary-text-col;
+  }
+}
+// ! don't move ".current_btn" & ".current"

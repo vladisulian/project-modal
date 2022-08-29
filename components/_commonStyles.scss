@@ -1,0 +1,163 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+
+  color: $main-text-col;
+  background-color: $clear-col;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+label {
+  position: relative;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  fill: currentColor;
+}
+.svg {
+  fill: $secondary-text-col;
+  &:hover {
+    fill: $accent-col;
+  }
+}
+
+address {
+  font-style: normal;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.current_page {
+  display: none;
+  position: absolute;
+  bottom: 0;
+
+  width: 100%;
+
+  border: 2px solid $accent-col;
+  border-radius: 2px;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.flex_container {
+  display: flex;
+}
+.join-link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+
+    // margin: 0 auto;
+    // padding: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    width: 768px;
+    // margin: 0 auto;
+    // padding: 0 15px;
+  }
+  .join-link-container {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // justify-content: space-around;
+    // align-items: baseline;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .current_page {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $main-text-col;
+
+    background-color: $clear-col;
+  }
+
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .flex_container {
+    display: flex;
+    align-items: center;
+  }
+  .join-link-container {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .current_page {
+    display: flex;
+  }
+}

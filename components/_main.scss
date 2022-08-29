@@ -1,0 +1,302 @@
+@media screen and (max-width: 479px) {
+  .main {
+    max-width: 480px;
+    // height: 400px;
+    margin: 0 auto;
+
+    padding: 118px 0;
+    text-align: center;
+
+    background-color: $main-bg-col;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main_bg_pic\ w480.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .main {
+        background-image: url(../images/main_bg_pic\ w480\ @2.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  .main__container {
+    display: flex;
+  }
+  .main_tittle {
+    width: 300px;
+    margin: 0 auto;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $btn-text-col;
+  }
+
+  .main__button {
+    min-width: 200px;
+    padding: 10px 32px;
+    margin-top: 30px;
+
+    border: none;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $btn-text-col;
+    background-color: $accent-col;
+
+    cursor: pointer;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $btn-text-col;
+      background-color: $btn-hover-col;
+      outline: none;
+      box-shadow: 0 0 0 1.5px $accent-col;
+    }
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .main {
+    max-width: 480px;
+    // height: 400px;
+    margin: 0 auto;
+
+    padding: 118px 0;
+    text-align: center;
+
+    background-color: $main-bg-col;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main_bg_pic\ w480.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .main {
+        background-image: url(../images/main_bg_pic\ w480\ @2.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  .main__container {
+    display: flex;
+  }
+  .main_tittle {
+    width: 360px;
+    margin: 0 auto;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: $btn-text-col;
+  }
+
+  .main__button {
+    min-width: 200px;
+    padding: 10px 32px;
+    margin-top: 30px;
+
+    border: none;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30 / 16);
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: $btn-text-col;
+    background-color: $accent-col;
+
+    cursor: pointer;
+
+    transition-property: color, background-color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $btn-text-col;
+      background-color: $btn-hover-col;
+      outline: none;
+      box-shadow: 0 0 0 1.5px $accent-col;
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main {
+    height: 400px;
+    margin: 0 auto;
+
+    padding: 118px 0;
+    text-align: center;
+
+    background-color: $main-bg-col;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main_bg_pic\ w768.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // styles for 2 retina
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .main {
+        background-image: url(../images/main_bg_pic\ w768\ @2.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .main_tittle {
+      width: 360px;
+      margin: 0 auto;
+
+      font-weight: 900;
+      font-size: 26px;
+      line-height: calc(42 / 26);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: $btn-text-col;
+    }
+
+    .main__button {
+      min-width: 200px;
+      padding: 10px 32px;
+      margin-top: 30px;
+
+      border: none;
+
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+
+      color: $btn-text-col;
+      background-color: $accent-col;
+
+      cursor: pointer;
+
+      transition-property: color, background-color, box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: $btn-text-col;
+        background-color: $btn-hover-col;
+        outline: none;
+        box-shadow: 0 0 0 1.5px $accent-col;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main {
+    max-width: 1680px;
+    height: 600px;
+    margin: 0 auto;
+
+    padding: 200px 0;
+    text-align: center;
+
+    background-color: $main-bg-col;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/main_bg_pic.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      .main {
+        background-image: url(../images/main_bg_pic@2.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .main_tittle {
+      width: 696px;
+      margin: 0 auto;
+
+      font-weight: 900;
+      font-size: 44px;
+      line-height: calc(60 / 44);
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+
+      color: $btn-text-col;
+    }
+
+    .main__button {
+      min-width: 200px;
+      padding: 10px 32px;
+      margin-top: 30px;
+
+      border: none;
+
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 4px;
+
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(30 / 16);
+
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
+
+      color: $btn-text-col;
+      background-color: $accent-col;
+
+      cursor: pointer;
+
+      transition-property: color, background-color, box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $btn-text-col;
+        background-color: $btn-hover-col;
+        outline: none;
+        box-shadow: 0 0 0 1.5px $accent-col;
+      }
+    }
+  }
+}

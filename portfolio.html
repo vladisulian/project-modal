@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <!-- !Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <!-- <link rel="stylesheet" href="./css/main.min.css" /> -->
+  </head>
+  <body>
+    <!-- ! header -->
+    <header class="header">
+      <div class="container flex_container">
+        <a href="./index.html" class="Web logo">Web<span class="Studio">Studio</span></a>
+        <!-- * header-nav  -->
+        <nav class="header-nav">
+          <ul class="header-nav__list list">
+            <li class="header-nav__item">
+              <a href="./index.html" class="header-nav__link">Студия</a>
+            </li>
+            <li class="header-nav__item">
+              <a href="./portfolio.html" class="header-nav__link current">Портфолио</a>
+              <div class="current_page"></div>
+            </li>
+            <li class="header-nav__item">
+              <a href="#" class="header-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- header-contacts -->
+        <ul class="header-contacts__list list">
+          <li class="header-contacts__item">
+            <a href="mailto:info@devstudio.com" class="header-contacts__link">
+              <svg class="header-contacts__icon">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li>
+            <a href="tel:+380961111111" class="header-contacts__link">
+              <svg class="header-contacts__icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- ! mobile-modal open button -->
+      <button class="mobile-navMenu__openBtn" data-mobile-modal-open>
+        <svg class="modal-openBtnIcon">
+          <use href="./images/icon.svg#icon-open-mob-modal"></use>
+        </svg>
+      </button>
+      <!-- ! mobile nav menu -->
+      <div class="mobile-navMenu__backdrop is-hidden" data-mobile-modal>
+        <div class="mobile-navMenu__modal">
+          <!-- * navigation -->
+          <ul class="mobile-navMenu__list list">
+            <li>
+              <a href="./index.html" class="mobile-navMenu__link">
+                <p>Студия</p>
+              </a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-navMenu__link current">
+                <p>Портфолио</p>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="mobile-navMenu__link">
+                <p>Контакты</p>
+              </a>
+            </li>
+          </ul>
+          <!-- * contacts -->
+          <div class="mobile-navMenu__contacts">
+            <!-- * contacts item -->
+            <ul class="mobile-navMenu__contacts-list list">
+              <li>
+                <a href="tel:+380961111111" class="mobile-navMenu__contacts-item">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="mobile-navMenu__contacts-item numb">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <!-- * web item -->
+            <ul class="mobile-navMenu__web-list">
+              <li>
+                <a href="https://www.instagram.com">
+                  <p class="mobile-navMenu__web-link line">Instagram</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/?lang=ru">
+                  <p class="mobile-navMenu__web-link line">Twitter</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://uk-ua.facebook.com">
+                  <p class="mobile-navMenu__web-link line">Facebook</p>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/владислав-ульянеев-21a1
+                  33240/"
+                >
+                  <p class="mobile-navMenu__web-link">Linkedin</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <button class="mobile-navMenu__modal-close" data-mobile-modal-close>
+            <svg>
+              <use href="./images/icon.svg#icon-close-button"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- ! main -->
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">text</h1>
+          <!-- * filter btn sect -->
+          <ul class="filter-list">
+            <li>
+              <button type="button" class="filter-list__button current_btn">Все</button>
+            </li>
+            <li>
+              <button type="button" class="filter-list__button">Веб-сайты</button>
+            </li>
+            <li>
+              <button type="button" class="filter-list__button">Приложения</button>
+            </li>
+            <li>
+              <button type="button" class="filter-list__button">Дизайн</button>
+            </li>
+            <li>
+              <button type="button" class="filter-list__button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- * img sect -->
+          <ul class="filter-img">
+            <!-- ! 1st -->
+            <li>
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img1-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img1-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img1-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Всё это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Технокряк</h2>
+                  <p class="filter-img__subtitle">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <!-- ! 2nd -->
+            <li class="size-limiter">
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img2-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img2-w768px.jpg"
+                      media="(min-dith: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img2-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita
+                      voluptas maxime accusamus, nam molestiae tempore placeat quia quaerat quidem
+                      deserunt? Nam assumenda fuga deleniti quibusdam itaque magni veritatis hic.
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="filter-img__subtitle">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <!-- ! 3rd -->
+            <li>
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img3-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img3-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img3-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita placeat
+                      quasi, ipsa numquam possimus sed blanditiis dignissimos vel nesciunt nemo
+                      consequatur quas non fugit facilis!
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Ресторан Seafood</h2>
+                  <p class="filter-img__subtitle">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <!-- ! 4th -->
+            <li>
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source srcset="./images/portfolio/img4-w320px.jpg" media="(max-width:767px)" />
+                    <source
+                      srcset="./images/portfolio/img4-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img4-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, mollitia!
+                    </p>
+                  </div>
+                </div>
+
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Проект Prime</h2>
+                  <p class="filter-img__subtitle">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <!-- ! 5th -->
+            <li>
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img5-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img5-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img5-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa nisi aperiam
+                      iure eius, doloremque dicta voluptatibus aliquid?
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Проект Boxes</h2>
+                  <p class="filter-img__subtitle">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <!-- ! 6th -->
+            <li>
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img6-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img6-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img6-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit quasi
+                      iure, nulla facere eos.
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Inspiration has no Borders</h2>
+                  <p class="filter-img__subtitle">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <!-- ! 7th -->
+            <li>
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img7-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img7-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img7-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quisquam ipsa
+                      veritatis dolorum consequatur magni.
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Издание Limited Edition</h2>
+                  <p class="filter-img__subtitle">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <!-- ! 8th -->
+            <li>
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img8-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img8-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/img8-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laboriosam
+                      architecto dolore reiciendis obcaecati officia. Quibusdam molestias
+                      necessitatibus deserunt rerum modi? Consequuntur inventore possimus, saepe
+                      quam pariatur dolore!
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Проект LAB</h2>
+                  <p class="filter-img__subtitle">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <!-- ! 9th -->
+            <li>
+              <a href="#" class="filter-img__link">
+                <div class="filter-img__overlaySquare">
+                  <picture>
+                    <source
+                      srcset="./images/portfolio/img9-w320px.jpg"
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="./images/portfolio/img9-w768px.jpg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <img
+                      src="./images/portfolio/img9-w1200px.jpg"
+                      alt="portfolio_pic"
+                      class="filter-img__pic"
+                    />
+                  </picture>
+                  <div class="overlay">
+                    <p class="overlay__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, sint?
+                      Excepturi nesciunt facere delectus animi accusamus officiis cum omnis culpa,
+                      eum, sapiente ex mollitia harum consequuntur maxime assumenda obcaecati
+                      eligendi sed!
+                    </p>
+                  </div>
+                </div>
+                <div class="filter-img__descContainer">
+                  <h2 class="filter-img__title">Growing Business</h2>
+                  <p class="filter-img__subtitle">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- ! footer -->
+    <footer class="footer">
+      <div class="container join-link-container">
+        <!-- *address container-->
+        <div class="footer-address-container">
+          <a href="./index.html" class="footer_web webstudio"
+            >Web<span class="footer_studio">Studio</span>
+          </a>
+          <!-- *##### address ##### -->
+          <address>
+            <ul>
+              <!-- *footer map -->
+              <li class="footer__contacts">
+                <a
+                  href="https://goo.gl/maps/mLrUPEMYMxBehZcJ7"
+                  target="_blank"
+                  rel="noopener nofollow"
+                  class="footer__map"
+                  >г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="footer__contacts">
+                <a href="mailto:info@example.com" class="footer__contacts">info@example.com</a>
+              </li>
+              <li class="footer__contacts">
+                <a href="tel:+38099111111" class="footer__contacts">+38 099 111 11 11 </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <!-- *join container -->
+        <div class="footer-join">
+          <p class="footer-join__text">Присоединяйтесь</p>
+          <ul class="main-team__linkslist">
+            <li class="main-team__icon-item footer-join__item">
+              <a href="https://www.instagram.com" class="main-team__link footer-join__link">
+                <svg class="main-team__icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-team__icon-item footer-join__item">
+              <a href="https://twitter.com/?lang=ru" class="main-team__link footer-join__link">
+                <svg class="main-team__icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-team__icon-item footer-join__item">
+              <a href="https://uk-ua.facebook.com" class="main-team__link footer-join__link">
+                <svg class="main-team__icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-team__icon-item footer-join__item">
+              <a
+                href="https://www.linkedin.com/in/владислав-ульянеев-21a133240/"
+                class="main-team__link footer-join__link"
+              >
+                <svg class="main-team__icon">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- *subscription container -->
+        <div class="footer-subscription">
+          <p class="footer-subscription__title">Подпишитесь на рассылку</p>
+          <form>
+            <label class="footer-subscription__label">
+              <input
+                type="email"
+                name="subscr-email"
+                placeholder="E-mail"
+                required
+                class="footer-subscription__input"
+              />
+              <button class="footer-subscription__button">
+                Подписаться
+                <svg class="footer-subscription__icon">
+                  <use href="./images/icon.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-modal.js"></script>
+  </body>
+</html>

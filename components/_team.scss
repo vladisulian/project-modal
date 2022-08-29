@@ -1,0 +1,250 @@
+@media screen and (max-width: 767px) {
+  .main-team {
+    text-align: center;
+    background-color: $our-team-bg-col;
+  }
+  .main-team__text {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33 / 28);
+  }
+
+  .main-team__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    margin-top: 50px;
+  }
+  .main-team__item {
+    background-color: $clear-col;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .main-team__img {
+    width: 450px;
+    border-radius: 0px;
+  }
+
+  .main-team__textContainer {
+    padding: 30px 0;
+  }
+  .main-team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+
+    margin-bottom: 10px;
+  }
+  .main-team__job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    color: $secondary-text-col;
+  }
+  .main-team__linkslist {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .main-team__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    color: $icon-color;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $btn-text-col;
+      background-color: $accent-col;
+    }
+  }
+
+  .main-team__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-team {
+    text-align: center;
+    background-color: $our-team-bg-col;
+  }
+  .main-team__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+
+  .main-team__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-top: 50px;
+  }
+  .main-team__item {
+    background-color: $clear-col;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  .main-team__textContainer {
+    padding: 30px 0;
+  }
+  .main-team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+
+    margin-bottom: 10px;
+  }
+  .main-team__job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    color: $secondary-text-col;
+  }
+  .main-team__linkslist {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .main-team__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    color: $icon-color;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $btn-text-col;
+      background-color: $accent-col;
+    }
+  }
+
+  .main-team__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-team {
+    text-align: center;
+    background-color: $our-team-bg-col;
+  }
+  .main-team__text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
+
+  .main-team__list {
+    display: flex;
+    margin-top: 50px;
+  }
+  .main-team__item {
+    margin-left: 30px;
+    background-color: $clear-col;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .main-team__item:first-child {
+    margin-left: 0;
+  }
+  .main-team__textContainer {
+    padding: 30px 0;
+  }
+  .main-team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+
+    margin-bottom: 10px;
+  }
+  .main-team__job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+
+    margin-bottom: 16px;
+
+    color: $secondary-text-col;
+  }
+  .main-team__linkslist {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .main-team__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    color: $icon-color;
+
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $btn-text-col;
+      background-color: $accent-col;
+    }
+  }
+
+  .main-team__icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+  }
+}

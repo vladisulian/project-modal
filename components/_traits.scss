@@ -1,0 +1,128 @@
+.main-traits__subtitle {
+  line-height: 24px;
+
+  color: $secondary-text-col;
+}
+
+// ! mobile
+@media screen and (max-width: 767px) {
+  .main-traits__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+  }
+  // .main-traits__item {
+  //   width: 300px;
+  // }
+  .main-traits__svgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+
+    background: $svg-box-bg-col;
+    border-radius: 4px;
+    /* text-align: center; */
+
+    margin-bottom: 30px;
+  }
+  .main-traits__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .main-traits__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-traits__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+  .main-traits__subtitle {
+    padding-left: 15px;
+  }
+}
+
+// !
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main-traits__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 30px;
+  }
+  .main-traits__item {
+    max-width: 354px;
+    // text-align: center;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+  }
+  .main-traits__svgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 354px;
+    height: 120px;
+
+    background: $svg-box-bg-col;
+    border-radius: 4px;
+    /* text-align: center; */
+
+    margin-bottom: 30px;
+  }
+  .main-traits__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .main-traits__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+}
+// ! pc
+@media screen and (min-width: 1200px) {
+  .main-traits__list {
+    display: flex;
+    gap: 30px;
+  }
+  .main-traits__svgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+
+    background: $svg-box-bg-col;
+    border-radius: 4px;
+    /* text-align: center; */
+
+    margin-bottom: 30px;
+  }
+  .main-traits__icon {
+    width: 70px;
+    height: 70px;
+  }
+  .main-traits__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+  }
+}
