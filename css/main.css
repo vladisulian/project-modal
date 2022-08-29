@@ -1250,11 +1250,16 @@ address {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 320px;
+  width: 320px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 30px;
   background-color: #ffe550;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .modal {
+    width: 458px;
+  }
 }
 
 .modal__form {
@@ -1309,6 +1314,12 @@ address {
 .modal-label__input:focus {
   color: #2c2c2c;
   border-color: #7eb101;
+}
+@media (min-width: 768px) and (max-width: 1279px) {
+  .modal-label__input {
+    min-width: 394px;
+    height: 48px;
+  }
 }
 
 .modal__closeBtn {
