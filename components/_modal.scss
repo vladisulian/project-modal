@@ -40,6 +40,10 @@
 }
 .modal__form {
   text-align: start;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .modal__title {
   font-family: 'Roboto';
