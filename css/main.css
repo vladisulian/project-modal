@@ -1290,6 +1290,8 @@ address {
   padding-left: 12px;
   border-radius: 30px;
   border: none;
+  outline: none;
+  border: 1px solid transparent;
   -webkit-box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
           box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
@@ -1300,7 +1302,6 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  outline: none;
 }
 .modal-label__input:hover {
   border-color: #7eb101;
