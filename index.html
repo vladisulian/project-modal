@@ -152,8 +152,20 @@
           <!-- ! ======###### modal js #######======= -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+              <p class="modal__title">Order form</p>
               <form class="modal__form">
+                <label class="modal-label">
+                  <span class="modal-label__text">Name</span>
+                  <input type="text" class="modal-label__input" />
+                </label>
+                <label class="modal-label">
+                  <span class="modal-label__text">Phone number</span>
+                  <input type="text" class="modal-label__input" />
+                </label>
+                <label class="modal-label">
+                  <span class="modal-label__text">E-mail</span>
+                  <input type="text" class="modal-label__input" />
+                </label>
                 <label class="modal-label">
                   <span class="modal-label__text"> Имя </span>
                   <input
@@ -163,57 +175,9 @@
                     required
                     minlength="3"
                   />
-                  <svg class="modal-label__icon">
-                    <use href="./images/icon.svg#icon-person"></use>
-                  </svg>
                 </label>
-                <label class="modal-label">
-                  <span class="modal-label__text"> Телефон </span>
-                  <input
-                    type="tel"
-                    name="number"
-                    class="modal-label__input"
-                    required
-                    minlength="7"
-                  />
-                  <svg class="modal-label__icon">
-                    <use href="./images/icon.svg#icon-phone"></use>
-                  </svg>
-                </label>
-                <label class="modal-label">
-                  <span class="modal-label__text"> Почта </span>
-                  <input type="email" name="user-mail" class="modal-label__input" required />
-                  <svg class="modal-label__icon">
-                    <use href="./images/icon.svg#icon-email"></use>
-                  </svg>
-                </label>
-                <label class="modal-label modal-label-last">
-                  <span class="modal-label__text">Комментарий</span>
-                  <textarea
-                    name="feedback"
-                    id="feedback"
-                    cols="30"
-                    rows="10"
-                    placeholder="Введите текст"
-                    class="modal__feedback"
-                  ></textarea>
-                </label>
-                <div class="modal-checkbox__container">
-                  <input
-                    type="checkbox"
-                    class="modal-checkbox__checkbox"
-                    id="checkbox"
-                    name="checkbox"
-                  />
-                  <label for="checkbox" class="modal-checkbox__label">
-                    <p class="modal-checkbox__text">
-                      Соглашаюсь с рассылкой и принимаю
-                      <a href="#" class="modal-checkbox__link">Условия договора</a>
-                    </p>
-                  </label>
-                </div>
-                <button type="submit" class="modal__submit">Отправить</button>
               </form>
+              <button type="submit" class="modal__submit">Send</button>
               <button class="modal__closeBtn" data-modal-close>
                 <svg class="modal_closeBtnIcon">
                   <use href="./images/icon.svg#icon-close-button"></use>
