@@ -1287,6 +1287,10 @@ address {
   color: #2c2c2c;
 }
 
+.modal-label {
+  margin-bottom: 24px;
+}
+
 .modal-label__text {
   font-family: "Roboto";
   font-style: normal;
@@ -1294,13 +1298,25 @@ address {
   font-size: 16px;
   line-height: 140%;
   padding-left: 32px;
+  margin-bottom: 9px;
   color: #2c2c2c;
+}
+
+.modal-label__errorText {
+  opacity: 0;
+  padding-left: 48px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 140%;
+  color: #ff705d;
+  margin-bottom: 9px;
 }
 
 .modal-label__input {
   min-width: 280px;
   height: 48px;
-  margin-bottom: 24px;
   margin-left: 20px;
   padding-left: 12px;
   border-radius: 30px;
@@ -1317,6 +1333,7 @@ address {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #7eb101;
 }
 .modal-label__input:hover {
   border-color: #7eb101;
@@ -1324,6 +1341,13 @@ address {
 .modal-label__input:focus {
   color: #2c2c2c;
   border-color: #7eb101;
+}
+.modal-label__input:valid {
+  border-color: #4caf50;
+}
+.modal-label__input:invalid {
+  border-color: red;
+  opacity: 1;
 }
 @media (min-width: 768px) {
   .modal-label__input {

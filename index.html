@@ -156,7 +156,18 @@
               <form class="modal__form">
                 <label class="modal-label">
                   <span class="modal-label__text">Name</span>
-                  <input type="text" class="modal-label__input" required placeholder="Your name" />
+                  <input
+                    type="text"
+                    class="modal-label__input"
+                    required
+                    placeholder="Your name"
+                    minlength="3"
+                    maxlength="25"
+                  />
+                  <!-- ! error text -->
+                  <span class="modal-label__errorText">
+                    The name must be between 3 and 25 characters
+                  </span>
                 </label>
                 <label class="modal-label">
                   <span class="modal-label__text">Phone number</span>
@@ -166,6 +177,10 @@
                     required
                     placeholder="+38(0__)___ __ __"
                   />
+                  <!-- ! error text -->
+                  <span class="modal-label__errorText">
+                    The name must be between 3 and 25 characters
+                  </span>
                 </label>
                 <label class="modal-label">
                   <span class="modal-label__text">E-mail</span>
@@ -175,6 +190,10 @@
                     required
                     placeholder="example@gmail.com"
                   />
+                  <!-- ! error text -->
+                  <span class="modal-label__errorText">
+                    The name must be between 3 and 25 characters
+                  </span>
                 </label>
                 <button type="submit" class="modal__submit">Send</button>
               </form>

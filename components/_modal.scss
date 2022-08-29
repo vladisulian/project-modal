@@ -58,6 +58,9 @@
   color: #2c2c2c;
 }
 
+.modal-label {
+  margin-bottom: 24px;
+}
 .modal-label__text {
   font-family: 'Roboto';
   font-style: normal;
@@ -66,14 +69,29 @@
   line-height: 140%;
 
   padding-left: 32px;
+  margin-bottom: 9px;
 
   color: #2c2c2c;
+}
+.modal-label__errorText {
+  opacity: 0;
+
+  padding-left: 48px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 140%;
+
+  color: #ff705d;
+
+  margin-bottom: 9px;
 }
 .modal-label__input {
   min-width: 280px;
   height: 48px;
 
-  margin-bottom: 24px;
   margin-left: 20px;
   padding-left: 12px;
 
@@ -98,6 +116,16 @@
     color: #2c2c2c;
     border-color: #7eb101;
   }
+
+  &:valid {
+    border-color: #4caf50;
+  }
+
+  &:invalid {
+    border-color: red;
+    opacity: 1;
+  }
+  border-color: #7eb101;
 
   @media (min-width: 768px) {
     min-width: 394px;
