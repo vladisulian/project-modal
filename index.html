@@ -145,11 +145,11 @@
     <main>
       <section class="main main__container">
         <div class="container">
-          <h1 class="main_tittle">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="main_tittle">Modal test</h1>
           <!-- * button -->
-          <button type="button" class="main__button" data-modal-open>Заказать услугу</button>
+          <button type="button" class="main__button" data-modal-open>Поклацать модалку</button>
 
-          <!-- ! ======###### modal js #######======= -->
+          <!-- ! - - - - - - - - modal - - - - - - - - -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <p class="modal__title">Order form</p>
@@ -167,6 +167,7 @@
                   />
                   <!-- ! error text -->
                   <span class="modal-label__errorText">
+                    <img src="./images/error-symb.svg" alt="error" class="error-img" />
                     The name must be between 3 and 25 characters
                   </span>
                 </label>
@@ -174,25 +175,27 @@
                 <label class="modal-label">
                   <span class="modal-label__text">Phone number</span>
                   <input
-                    type="tel"
+                    type="text"
                     class="modal-label__input"
                     placeholder="+38(0__)___ __ __"
+                    pattern="\d*"
+                    maxlength="13"
                   />
                   <!-- ! error text -->
                   <span class="modal-label__errorText">
-                    The name must be between 3 and 25 characters
+                    <img src="./images/error-symb.svg" alt="error" class="error-img" />
+                    This phone must be in the format 099 000 00 00
                   </span>
                 </label>
                 <!-- ? email -->
                 <label class="modal-label">
                   <span class="modal-label__text">E-mail</span>
-                  <input
-                    type="email"
-                    class="modal-label__input"
-                    placeholder="example@gmail.com"
-                  />
+                  <input type="email" class="modal-label__input" placeholder="example@gmail.com" />
                   <!-- ! error text -->
-                  <span class="modal-label__errorText"> Please enter a valid email address </span>
+                  <span class="modal-label__errorText">
+                    <img src="./images/error-symb.svg" alt="error" class="error-img" />
+                    Please enter a valid email address
+                  </span>
                 </label>
                 <button type="submit" class="modal__submit">Send</button>
               </form>

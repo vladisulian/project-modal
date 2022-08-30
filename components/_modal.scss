@@ -58,9 +58,6 @@
   color: #2c2c2c;
 }
 
-.modal-label {
-  margin-bottom: 24px;
-}
 .modal-label__text {
   font-family: 'Roboto';
   font-style: normal;
@@ -76,6 +73,8 @@
 .modal-label__errorText {
   opacity: 0;
 
+  display: flex;
+
   padding-left: 48px;
 
   font-family: 'Roboto';
@@ -87,6 +86,9 @@
   color: #ff705d;
 
   margin-bottom: 9px;
+}
+.error-img {
+  margin-right: 4.43px;
 }
 .modal-label__input {
   min-width: 280px;

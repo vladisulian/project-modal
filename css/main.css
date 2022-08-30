@@ -1287,10 +1287,6 @@ address {
   color: #2c2c2c;
 }
 
-.modal-label {
-  margin-bottom: 24px;
-}
-
 .modal-label__text {
   font-family: "Roboto";
   font-style: normal;
@@ -1304,6 +1300,9 @@ address {
 
 .modal-label__errorText {
   opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-left: 48px;
   font-family: "Roboto";
   font-style: normal;
@@ -1312,6 +1311,10 @@ address {
   line-height: 140%;
   color: #ff705d;
   margin-bottom: 9px;
+}
+
+.error-img {
+  margin-right: 4.43px;
 }
 
 .modal-label__input {
